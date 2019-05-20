@@ -1,14 +1,30 @@
 <template>
   <v-container>
-    zero-process page
+     <v-flex xs12 sm4 text-xs-center>
+        <p>{{ mycounter }}</p>
+        <p>
+          <v-btn @click="increment">+</v-btn>
+        </p>
+      </v-flex>
   </v-container>
 </template>
 
 <script>
-  export default {
-    data: () => ({
+  import { mapMutations, mapGetters } from 'vuex'
 
-    })
+  export default {
+    name:"ZeroProcess",
+    methods:{
+      ...mapMutations([
+      'increment'
+    ]),
+    },
+    computed:{
+      ...mapGetters([
+        'mycounter'
+      ])
+    }
+
   }
 </script>
 

@@ -15,7 +15,7 @@ export default new Router({
     },
     {
       path: '/zero-process',
-      name: 'zero-process',
+      name: 'ZeroProcess',
       component: ZeroProcess
     }
   ]

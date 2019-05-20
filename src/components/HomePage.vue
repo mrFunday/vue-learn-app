@@ -2,7 +2,7 @@
   <v-container>
       <v-flex xs12 sm4 text-xs-center>
         <div>
-          <v-btn to="/zero-process">Go to Zero</v-btn>
+          <v-btn :to="{name: 'ZeroProcess'}">Go to Zero</v-btn>
         </div>
       </v-flex>
   </v-container>
@@ -10,9 +10,7 @@
 
 <script>
   export default {
-    data: () => ({
-
-    })
+    name:"HomePage",
   }
 </script>
 
