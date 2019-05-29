@@ -1,22 +1,20 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HomePage from './components/HomePage.vue'
-import ZeroProcess from './components/ZeroProcess.vue'
+
 
 Vue.use(Router)
-
+import FirstLeftLinkMain from './components/leftside/FirstLeftLinkMain'
+import FirstRightLinkMain from './components/rightside/FirstRightLinkMain'
 export default new Router({
   mode: 'history',
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomePage
-    },
-    {
-      path: '/zero-process',
-      name: 'ZeroProcess',
-      component: ZeroProcess
+      name: 'firstPorn',
+      components: {
+        a1: FirstLeftLinkMain,
+        b1: FirstRightLinkMain
+      }
     }
   ]
 })

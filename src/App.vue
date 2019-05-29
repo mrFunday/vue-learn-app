@@ -1,27 +1,27 @@
 <template>
-  <v-app>
-    <v-content>
-      <v-container fluid>
-        <router-view></router-view>
-      </v-container>
-    </v-content>
-  </v-app>
+    <v-app>
+        <Header/>
+        <v-content>
+            <v-container fluid>
+                <router-view name="a1"></router-view>
+                <router-view name="b1"></router-view>
+            </v-container>
+        </v-content>
+    </v-app> 
 </template>
 
 <script>
-import HomePage from './components/HomePage.vue'
-import ZeroProcess from './components/ZeroProcess.vue'
+import Header from './components/header/Header'
 
 export default {
-  name: 'App',
-  components: {
-    HomePage,
-    ZeroProcess
-  },
+    name: 'App',
+    components: {
+      Header
+    },
   data () {
     return {
-      //
+        //
+        }
     }
-  }
 }
 </script>
