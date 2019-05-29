@@ -6,7 +6,7 @@
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn flat>Расчеты</v-btn>
         <v-btn flat>Технологии</v-btn>
-        <v-btn flat>/Профили</v-btn>
+        <v-btn flat>Профили</v-btn>
     </v-toolbar-items>
     </v-toolbar>    
 </template>
