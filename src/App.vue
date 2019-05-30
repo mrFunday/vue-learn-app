@@ -3,9 +3,15 @@
         <Header/>
         <v-content>
             <v-container fluid>
-                <router-view name="a1"></router-view>
-                <router-view name="b1"></router-view>
-            </v-container>
+                <v-layout>
+                    <v-flex >
+                        <router-view name="a1"></router-view>
+                    </v-flex>
+                    <v-flex>
+                        <router-view name="b1"></router-view>
+                    </v-flex>
+                </v-layout>
+            </v-container>               
         </v-content>
     </v-app> 
 </template>
